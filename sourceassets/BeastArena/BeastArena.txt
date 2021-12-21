@@ -1,0 +1,24 @@
+Beast Arena was my first completed game using Unreal Engine. It featured fast paced combat, boss-like enemies,
+and a crafting system. Since this was an early project, this video will be more of a reflection rather than a showcase of
+features.
+
+Beast Area was my first dive into AI using Unreal's Behavior Tree System. Although I was already familiar with state-machine AI
+from previous projects, having a visual representation not only helped during the planning phase, but also while debugging.
+For example, debugging state-machine AI either required break-points or debug messages to properly locate issues. This also
+meant I would have been recompiling code often, wasting precious time. Since I took advantage of Behavior Tree's,
+I could visualize which nodes were active directly in the engine. This helped immensily as I was still new to designing
+AI using this system.
+
+This project also introduced me to using Blueprints at a larger scale. If not properly maintained, blueprints can become a
+nightmare to work with. I began to feel the struggle nearing the end of the projects completion as I was trying to pump
+as many features as I could. Taking a brief look at the player blueprint and animation blueprint, it is clear that
+code was scattered and unorganized. Attacking, dashing, and even death were handled in the animation BP. To give myself
+some credit, I was most proud of the crafting system I developed alongside the inventory UI. It featured draggable items
+and a crafting system that allowed you to combine items together. It was an eye opening moment for me at the time because
+parts of the dragging UI system was already handled by Unreal. I could spend more time working on other aspects of the game
+rather than reinventing the wheel.
+
+While Beast Arena is nowhere near a perfect game for my standards today, it gave me the confidence to continue learning
+Unreal Engine and eventually C++. Today, I make a conscious effort to avoid tightly coupled components.
+It has paid dividends as I am able to reuse old systems for new projects without having to refactor code. You can play
+an updated version of Beast Arena today on itchio. Thank you.

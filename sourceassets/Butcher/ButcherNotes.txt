@@ -1,0 +1,27 @@
+Butcher script
+
+For the month of Halloween, a worked with a group of game developers to create an immersive horror/puzzle game.
+My name is Gareth Aguilar and today, I will guide you through the work I did to turn a concept into reality.
+
+For Butcher, I worked as a general C# programmer. Primarily working on foundational mechanics such as interaction
+and inventory management.
+To begin, the interaction system had to encompase a wide range of objects such as doors, items, hatches, etc.
+Beforehand, I also knew the player, enemies, and the game system may interact with these objects at some point so
+I had to ensure mechanics would work for every situation. With that in mind, I came up with 2 solutions.
+First, I could create an interface that would hold general functions such as ToInteract() or CanInteract().
+This sounded like a good idea at first because this meant no object had to be directly related to one base object.
+However, interfaces have limitations such as not being able to have shared variables, default implementations,
+among other things which were deal breakers for me due to time constraints.
+As a result, I ended up using a parent/child system which let me do all of the above. While all interactables
+stemmed from one base interactable, it never became an issue with the short scope of the game.
+
+Next, I had to create an inventory system that not only allowed the player to pickup/drop items, but interact with
+them and with the world. For example, an equipped key should open a specific locked door. On that same note,
+a book should display text and hooks should only be used on the doll. Since items would be expected to hold a lot of info,
+I decided to separate data and components through Scriptable Objects, an object in Unity that only stored data.
+This allowed designers to create their own items without writing code. All item data would be in a folder that could later
+easily be changed for gameplay balancing, name changing, etc.
+
+All in all, Butcher was submitted to the ScreamJam2020 and placed #68 out of 157 entries. Through its development, I learned
+to take advantage of advanced coding techniques such as delegates/actions to improve workflow and the importance of
+planning especially while on a deadline. You can play the game now on itchio linked in the description. Thank you.

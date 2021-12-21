@@ -1,0 +1,28 @@
+For the month of December, I worked with a small group of members to develop The Last Gasp, a unique action game for the
+MegaJam2020. While I helped develop the puzzles for the project along with weapon hit detection, I primarily focused on
+artificial intelligence programming and design. My name is Gareth and today I will present a short showcase of the features I completed
+during my time on this project.
+
+To begin, I wanted to expand my knowledge and take considerable risks for this project. This would be my first game
+where I combined the Environment Query System, also known as EQS, behavior trees, and AI perception to create a fully fledged enemy system.
+I set out a few goals before beginning work. First, I wanted to reuse code wherever possible, this meant developing
+custom tasks for various AI or simply using built-in functionality like AI perception. Second, our team planned to continue work after the jam completed so 
+I wanted to keep everything readable and simple to iterate on in the future.
+Finally, I didnt want to create more overhead for other developers to worry about so AI should be contained from other elements as
+much as possible. This process first began at the concept level. All AI behavior would be handled in the AI controller and Behavior Tree,
+essentially simulating player input. This meant characters would have to be structured in a way that the enemy or player could attack
+or move without additional code. For example, every character had an OnAttack() method, this allowed
+a specific key to call the function, or have the Behavior Tree execute it. With that rule in mind, gameplay and AI 
+could be developed simultaniously without worry of breaking functionality. 
+Next, I tackled implementation of AI behavior. Since enemies could be patrolling, idle, or wandering, I needed to account for all situations and give
+designers the ability to easily pick behaviors for each enemy in the level. This is when I found out about RunBehaviorDynamic, a task that could dynamically 
+run individual behavior trees while nested in another. This accomplished exactly what I was looking for and I liked it so much 
+that I used it for implementing different battle tactics, like doing a combo attack, when going against the player. After handling basic AI, I moved
+on to EQS, a system that allows AI to be aware of its surroundings and act based on info given. I ended up going overboard and used queries for
+almost every part of enemy AI movement. For example, melee AI would surround the player at a safe distance before attacking. 
+Ranged AI would do a similar tactic except at a further distance and ensure that there was always a clear path to fire arrows at the player.
+
+The Last Gasp was submitted to the MegaJam 2020 and competed with 345 other entries. While we did not win any prizes, this was a great learning experience for our
+small team. I got to take a stab at advanced artificial intelligence and managed to exceed what we had planned originally. For the next few months after submission,
+we worked on fixing bugs and any outstanding issues that we may have missed. You can play an updated version of The Last Gasp today on itchio, linked in the
+description, thank you.

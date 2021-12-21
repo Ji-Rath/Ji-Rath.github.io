@@ -1,0 +1,35 @@
+requests;
+- more content (ex. how i made design choices, programming, etc)
+- short video explaining my roles in each project
+
+
+Video Structure:
+- gameplay footage in the background, usually pertaining to the subject at hand
+- voice over explaining my role in the project and other notes
+
+Intro
+- Basic introduction, name, game name, credits, role in game, language, engine
+Middle
+- Divided into sections based on work completed - problem faced, potential solutions, actual solution and why
+End
+- Final thoughts, experience gained, lessons learned
+
+- Put best projects first.
+- show link to youtube when project clicked
+- add link to play game on project portfolio
+
+
+Finish portfolio
+- Add profile picture
+- Remove sports in bio, probably better to mention lifeguard work and responsibilities
+- add links to videos
+- Mention abilities, language used in project desc
+Finish up/revisit resume
+Work on cover letter
+Find a few companies to apply to (5)
+
+Update about me
+- Instead of 'productive programmer', put software engineer
+
+- 'software engineer with experience using...' instead of first aboutme line
+- reverse line 'to draw inspiration for my projects, i play...'
