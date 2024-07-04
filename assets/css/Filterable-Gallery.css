@@ -1,0 +1,10 @@
+/* The "show" class is added to the filtered elements */
+
+.item-filter {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
